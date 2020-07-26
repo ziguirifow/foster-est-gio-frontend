@@ -1,0 +1,32 @@
+.navbar > *:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  justify-content: space-between;
+  background: #3d5057;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
+  width: 307px;
+  font-weight: normal;
+}
+
+.navbar a:hover {
+  background: #667a82;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}

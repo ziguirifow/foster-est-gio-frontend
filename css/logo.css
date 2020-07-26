@@ -1,0 +1,58 @@
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 23px;
+}
+
+.logo img {
+  margin-right: auto;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.logo input {
+  width: 150px;
+  height: 30px;
+  font-size: 11px;
+  font-weight: normal;
+  padding: 10px;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.logo button {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background: #c4c4c4;
+  color: #969696;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.logo button:hover {
+  background: #b6b6b6;
+}
+
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .logo img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+
+  .logo input {
+    width: 100%;
+    min-width: 60px;
+  }
+}

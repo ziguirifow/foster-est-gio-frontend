@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 989px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.principal {
+  max-width: 941px;
+  margin: 24px;
+}
+
+.frontend {
+  display: grid;
+  margin-bottom: 52px;
+}
+
+.frontend img {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.front-end-img {
+  width: 100%;
+  height: auto;
+}
+
+.monitor-img {
+  height: 120%;
+  width: 37%;
+  justify-self: end;
+  top: 12%;
+  left: 1.5%;
+}
+
+@-moz-document url-prefix() {
+  .monitor-img {
+    margin-bottom: -52px;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .monitor-img {
+    margin-bottom: -52px;
+  }
+}
